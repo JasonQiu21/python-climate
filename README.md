@@ -21,3 +21,8 @@ This contains code for making 3 different calculations involving geopotential.
 ### global_mean_temp_arctic
 
 This contains code for plotting data, as well as for calculating the global mean temperature and arctic mean temperature.
+
+## More info and resources
+
+[GCPy_demo](https://gcpy-demo.readthedocs.io/en/latest/advanced_xarray.html) example of using chunking for low-memory situations. More info can be found in the [docs](https://xarray.pydata.org/en/stable/generated/xarray.Dataset.chunk.html?highlight=chunk).
+

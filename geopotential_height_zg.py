@@ -48,13 +48,12 @@ def open_dsets(df):
         return ds
     except ValueError:
         return None
-
-def open_delayed(df):='experiment_id', name='experiment_id', coords={'experiment_id': expts})
-
-dsets_aligned = {}
+        
+def open_delayed(df):
     """A dask.delayed wrapper around `open_dsets`.
     Allows us to open many datasets in parallel."""
     return dask.delayed(open_dsets)(df)
+dsets_aligned = {}
 
 from collections import defaultdict
 
